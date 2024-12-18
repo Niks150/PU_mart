@@ -1,0 +1,141 @@
+/* General Reset */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: rgb(172, 157, 157);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for Image and Form */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.396);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 850px;
+    height: 520px;
+}
+
+/* Image Section */
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.image_login {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Login Form Section */
+form {
+    flex: 1;
+    height: 100%;
+    background-color: #fdf8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 35px;
+}
+
+form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+form label {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form #note {
+    color: red;
+    font-size: small;
+}
+
+/* Styling for Input Fields */
+form input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.714);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Blurry box shadow effect */
+    border: none; /* Remove the border */
+}
+
+/* Placeholder Text Styling */
+form input::placeholder {
+    color: #000000;
+    text-shadow: 2px 2px 5px #0000004d; /* Blurry drop shadow effect for placeholder */
+}
+
+
+form button {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px solid black;
+    box-shadow: 6px 13px 7px -9px #0000004d;
+}
+
+/* Social Buttons */
+.social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social div {
+    width: 150px;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.47);
+    color: black; /* Changed to black */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.social i {
+    margin-right: 8px;
+    color: black; /* Changed to black */
+}
