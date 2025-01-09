@@ -7,6 +7,7 @@ html {
     /* Use Roboto font */
     box-sizing: border-box;
     background-color: #FFFDF2;
+    height: 100vh;
 }
 
 /* Navigation Bar Container */
@@ -135,7 +136,7 @@ html {
 /* Hover Effect for Boxes */
 .box:hover {
     transform: scale(1.2);
-    
+
 }
 
 /* Main container styling */
@@ -149,7 +150,8 @@ html {
     max-width: 471px;
     margin: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    float: left;
+    float: right;
+
 }
 
 /* Heading styling */
@@ -163,9 +165,12 @@ html {
 /* Grid container */
 .box-container-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px; /* Space between items */
-    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two equal columns */
+    gap: 20px;
+    /* Space between items */
+    justify-items: center;
+    /* Center items horizontally */
 }
 
 /* Individual item styling */
@@ -182,7 +187,8 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.box-item img:hover{
+
+.box-item img:hover {
     transform: scale(1.2);
 }
 
@@ -198,7 +204,8 @@ html {
     display: inline-block;
     margin-top: 20px;
     font-size: 14px;
-    color: #0073e6; /* Blue color for link */
+    color: #0073e6;
+    /* Blue color for link */
     text-decoration: none;
     font-weight: bold;
 }
@@ -206,6 +213,7 @@ html {
 .explore-all:hover {
     text-decoration: underline;
 }
+
 .box-container-2 {
     background: linear-gradient(to bottom, #fff, #f5f5f5);
     padding: 11px;
@@ -230,9 +238,12 @@ html {
 /* Grid container */
 .box-container-grid-2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px; /* Space between items */
-    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two equal columns */
+    gap: 20px;
+    /* Space between items */
+    justify-items: center;
+    /* Center items horizontally */
 }
 
 /* Individual item styling */
@@ -249,7 +260,8 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.box-item-2 img:hover{
+
+.box-item-2 img:hover {
     transform: scale(1.2);
 }
 
@@ -265,7 +277,8 @@ html {
     display: inline-block;
     margin-top: 20px;
     font-size: 14px;
-    color: #0073e6; /* Blue color for link */
+    color: #0073e6;
+    /* Blue color for link */
     text-decoration: none;
     font-weight: bold;
 }
@@ -275,75 +288,85 @@ html {
 }
 
 
-        /* Modal Styles */
-        #login-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
+/* Modal Styles */
+#login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-        #login-modal .modal-content {
-            width: 50%;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
+#login-modal .modal-content {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
 
-        #login-modal .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: red;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            cursor: pointer;
-        }
+#login-modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
 
-        #login-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
+#login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-        #login-modal .modal-content {
-            width: 50%;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
+#login-modal .modal-content {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
 
-        #login-modal .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: red;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            cursor: pointer;
-        }
+#login-modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-1{
+    background-color: black;
+    position:absolute;
+    width: 100%;
+    color: white;
+    text-align: center  ;
+    height: 50px;
+    bottom: 0%;
+}

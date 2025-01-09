@@ -127,7 +127,7 @@ body, html {
 
 /* Small Box Display */
 #small-box {
-    background-color: rgba(214, 214, 253, 0.9); /* Translucent background */
+    background-color:#FFFDF2; /* Translucent background */
     width: 400px;
     height: 600px;
     border-radius: 10px;
@@ -182,7 +182,7 @@ body, html {
 
 /* Close Button */
 #close-btn {
-    background-color: red;
+    background-color: rgb(252, 252, 252);
     color: white;
     padding: 5px 10px;
     border: none;
