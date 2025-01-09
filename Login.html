@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login/Register</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
@@ -17,22 +17,63 @@
         </div>
         
         <!-- Login Form Section -->
-        <form>
-            <h3>Login Here</h3>
+        <div id="form-container">
+            <!-- Login Form -->
+            <form id="login-form">
+                <h3>Login Here</h3>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Email or Phone" id="username">
+                <span id="note">Use only Parul Id*</span>
 
-            <label for="username">Username</label>
-            <input type="text" placeholder="Email or Phone" id="username">
-            <span id="note">Use only Parul Id*</span>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password">
 
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password">
+                <button >Log In</button>
+                <p>
+                    Don't have an account? 
+                    <span class="toggle-form" onclick="toggleForm()" style="cursor: pointer;">Register</span>
+                </p>
+                <div class="social">
+                    <div class="go"><i class="fab fa-google"></i> Google</div>
+                    <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+                </div>
+            </form>
 
-            <button>Log In</button>
-            <div class="social">
-                <div class="go"><i class="fab fa-google"></i> Google</div>
-                <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
-            </div>
-        </form>
+            <!-- Register Form -->
+            <form id="register-form" style="display: none;">
+                <h3>Register Here</h3>
+                <label for="reg-username">Username</label>
+                <input type="text" placeholder="Enter your username" id="reg-username">
+
+                <label for="reg-password">Password</label>
+                <input type="password" placeholder="Enter your password" id="reg-password">
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" placeholder="Confirm your password" id="confirm-password">
+
+                <button style="cursor: pointer;">Register</button>
+                <p>
+                    Already have an account? 
+                    <span class="toggle-form" onclick="toggleForm()">Login</span>
+                </p>
+            </form>
+        </div>
     </div>
+    <script src="login.js"></script>
+    <script>
+        // Toggle between Login and Register forms
+        function toggleForm() {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+
+            if (loginForm.style.display === "none") {
+                loginForm.style.display = "block";
+                registerForm.style.display = "none";
+            } else {
+                loginForm.style.display = "none";
+                registerForm.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

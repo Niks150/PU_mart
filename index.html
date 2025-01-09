@@ -6,39 +6,136 @@
     <link rel="shortcut icon" type="x-icon" href="/assests/home_LL.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrollable Items</title>
+    <script src="home.js" defer></script>
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/3ec8f51ae6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Modal Styles */
+        #login-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #login-modal .modal-content {
+            width: 50%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        #login-modal .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <div class="nav_container">
-        <div class="nav_bar">
-            <!-- Left-aligned Image -->
-            <img src="/assests/Parul University.png " alt="Parul University Logo" class="nav_logo">
-            <!-- Navigation Links -->
-            <a href="index.html"><i class="fa fa-home"></i> Home</a>
-            <a href="items.html"><i class="fa fa-list"></i> Items</a>
-            <a href="lost.html"><i class="fa fa-search"></i> Lost</a>
-            <a href="#"><i class="fa fa-map-marker"></i> Found</a>
-            <a href="Login.html" alt="_main"><i class="fa fa-user"></i> Login</a>
+    <div class="boxes-container">
+        <!-- Navigation Bar -->
+        <div class="nav_container">
+            <div class="nav_bar">
+                <img src="/assests/Parul University.png" alt="Parul University Logo" class="nav_logo">
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+                <a href="items.html"><i class="fa fa-list"></i> Items</a>
+                <a href="lost.html"><i class="fa fa-search"></i> Lost & Found</a>
+                <a href="#"><i class="fa fa-map-marker"></i> Buy & Sell</a>
+                <a href="login.html" alt="_main"><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+
+        <!-- Image Container -->
+        <div class="box-container-parent">
+            <!-- Box Container for Random Images -->
+            <div class="box-container">
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=1" alt="Image 1" class="image"></a>
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=2" alt="Image 2" class="image"></a>
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=3" alt="Image 3" class="image"></a>
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=4" alt="Image 4" class="image"></a>
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=5" alt="Image 5" class="image"></a>
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=6" alt="Image 6" class="image"></a>
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=5" alt="Image 5" class="image"></a>
+                <a href="#" class="box"><img src="https://picsum.photos/200?random=6" alt="Image 6" class="image"></a>
+            </div>
+        </div>
+
+        <div class="box-container-main">
+            <div class="box-container-grid">
+                <div class="box-item">
+                    <a href="#"> <img src="https://picsum.photos/200?random=1"
+                            alt="Cushion covers, bedsheets & more"></a>
+                    <p>Cushion covers, bedsheets & more</p>
+                </div>
+                <div class="box-item">
+                    <a href="#"> <img src="https://picsum.photos/200?random=2" alt="Figurines, vases & more"></a>
+                    <p>Figurines, vases & more</p>
+                </div>
+                <div class="box-item">
+                    <a href="#"> <img src="https://picsum.photos/200?random=3" alt="Home storage"></a>
+                    <p>Home storage</p>
+                </div>
+                <div class="box-item">
+                    <a href="#"> <img src="https://picsum.photos/200?random=4" alt="Lighting solutions"></a>
+                    <p>Lighting solutions</p>
+                </div>
+            </div>
+            <a href="#" class="explore-all">Explore all</a>
+        </div>
+
+        <div class="box-container-2">
+            <div class="box-container-grid-2">
+                <div class="box-item-2">
+                    <a href="#"> <img src="https://picsum.photos/200?random=1"
+                            alt="Cushion covers, bedsheets & more"></a>
+                    <p>Cushion covers, bedsheets & more</p>
+                </div>
+                <div class="box-item-2">
+                    <a href="#"> <img src="https://picsum.photos/200?random=2" alt="Figurines, vases & more"></a>
+                    <p>Figurines, vases & more</p>
+                </div>
+                <div class="box-item-2">
+                    <a href="#"> <img src="https://picsum.photos/200?random=3" alt="Home storage"></a>
+                    <p>Home storage</p>
+                </div>
+                <div class="box-item-2">
+                    <a href="#"> <img src="https://picsum.photos/200?random=4" alt="Lighting solutions"></a>
+                    <p>Lighting solutions</p>
+                </div>
+            </div>
+            <a href="#" class="explore-all">Explore all</a>
         </div>
     </div>
 
-    <!-- Box Container for Random Images -->
-    <div class="box-container">
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=1" alt="Image 1"></a>
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=2" alt="Image 2"></a>
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=3" alt="Image 3"></a>
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=4" alt="Image 4"></a>
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=5" alt="Image 5"></a>
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=6" alt="Image 6"></a>
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=5" alt="Image 5"></a>
-        <a href="#" class="box"><img src="https://picsum.photos/200?random=6" alt="Image 6"></a>
+    <!-- Modal -->
+    <div id="login-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div id="modal-body"></div>
+        </div>
     </div>
 
-    
+
 
 </body>
+
 </html>
