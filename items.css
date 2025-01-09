@@ -77,7 +77,6 @@ body, html {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    
     max-height: 100vh;
 }
 
@@ -153,9 +152,32 @@ body, html {
 
 /* Small Box Sections */
 #small-box .section {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
     font-size: 16px;
     color: #333;
+    text-align: left; /* Align text to the left */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Icons for Like, Comment, and Share */
+#small-box .section .icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+#small-box .section .icons i {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#small-box .section .icons i:hover {
+    color: #000;
 }
 
 /* Close Button */
