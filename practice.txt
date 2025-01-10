@@ -5,3 +5,19 @@
                 <div id="modal-body"></div>
             </div>
         </div>
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer .section1 {
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+}

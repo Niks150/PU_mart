@@ -64,10 +64,10 @@ body, html {
 
 /* Logo Styling */
 .nav_logo {
-    height: 120px;
+    height: 41px;
     width: auto;
     cursor: pointer;
-    left: -107px;
+    left: -50px;
     position: relative;
 }
 

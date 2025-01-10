@@ -65,9 +65,10 @@ html {
 }
 
 .nav_logo {
-    height: 120px;
+    height: 41px;
     width: auto;
     cursor: pointer;
+    left: -50px;
     position: relative;
 }
 
@@ -164,6 +165,7 @@ html {
     
     
 }
+
 
 .box-container-grid,
 .box-container-grid-2 {

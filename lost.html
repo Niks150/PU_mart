@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/3ec8f51ae6.js" crossorigin="anonymous"></script>
@@ -7,24 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost</title>
 </head>
+
 <body>
     <div class="nav_container">
         <div class="nav_bar">
-            <img src="/assests/Parul University.png" alt="Parul University Logo" class="nav_logo">
+            <img src="/assests/logo.png" alt="Parul University Logo" class="nav_logo">
             <a href="index.html"><i class="fa fa-home"></i> Home</a>
-            <a href="items.html"><i class="fa fa-list"></i> Items</a>
-            <a href="lost.html"><i class="fa fa-search"></i> Lost & Found</a>
+            <a href="items.html"><i class="fa fa-list"></i> Founded Items</a>
+            <a href="lost.html"><i class="fa fa-search"></i> Lost</a>
             <a href="#"><i class="fa fa-map-marker"></i> Buy & Sell</a>
             <a href="login.html" alt="_main"><i class="fa fa-user"></i> Login</a>
         </div>
-    </div>  
+    </div>
 
-     <!-- Lost Item Submission Form -->
-     <div class="form-container">
-        <h2>Post a Lost Item</h2>
+    <!-- Lost Item Submission Form -->
+    <div class="form-container">
+        <h2> Lost Item</h2>
         <form id="lost-item-form">
             <label for="item-name">Item Name:</label>
             <input type="text" id="item-name" name="item-name" required>
+            <label for="category">Select Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+                <option value="documents">Documents</option>
+                <option value="others">Others</option>
+            </select>
 
             <label for="item-description">Description:</label>
             <textarea id="item-description" name="item-description" rows="4" required></textarea>
@@ -40,10 +51,10 @@
     </div>
 
     <script>
-        document.getElementById('lost-item-form').addEventListener('submit', function(event) {
+        document.getElementById('lost-item-form').addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(this);
-            
+
             // Placeholder for form submission logic (e.g., sending to server or local storage)
             alert('Lost item submitted successfully!');
         });
@@ -51,4 +62,5 @@
 
 
 </body>
+
 </html>
