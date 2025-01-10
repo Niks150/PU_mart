@@ -7,6 +7,7 @@ html {
     /* Use Roboto font */
     box-sizing: border-box;
     background-color: #FFFDF2;
+    height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -97,7 +98,7 @@ html {
 .form-container {
     width: 40%;
     /* Adjust width as needed */
-    margin: 50px auto;
+    margin:63px auto;
     /* Center the form horizontally with auto margin */
     padding: 15px;
     background-color: #ffffff;
