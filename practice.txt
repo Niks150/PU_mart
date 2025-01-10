@@ -1,0 +1,7 @@
+<!-- Modal -->
+        <div id="login-modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+                <div id="modal-body"></div>
+            </div>
+        </div>
