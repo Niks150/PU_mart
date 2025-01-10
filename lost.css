@@ -4,6 +4,7 @@ body, html {
     padding: 0;
     font-family: 'Roboto', sans-serif; /* Use Roboto font */
     box-sizing: border-box;
+    background-color: #FFFDF2;
 }
 
 /* Navigation Bar Container */
@@ -68,4 +69,58 @@ body, html {
     cursor: pointer;
     left: -107px;
     position: relative;
+}
+
+/* Lost Item Submission Form Container */
+.form-container {
+    width: 40%; /* Adjust width as needed */
+    margin: 50px auto; /* Center the form horizontally with auto margin */
+    padding: 15px;
+    background-color: #ffffff; /* White background for the form box */
+    border-radius: 10px; /* Rounded corners for the form box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Max width to ensure responsiveness */
+    box-sizing: border-box;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+/* Labels */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs and Textarea */
+form input[type="text"],
+form input[type="file"],
+form textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; /* White text color for contrast */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+form button[type="submit"]:hover {
+    background-color: #45a049; 
 }
