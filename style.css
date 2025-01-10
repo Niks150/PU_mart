@@ -151,6 +151,19 @@ html {
     
     
 }
+.box-container-5 {
+    background: linear-gradient(to bottom, #fff, #f5f5f5);
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 33px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: right;
+    
+    
+}
 
 .box-container-grid,
 .box-container-grid-2 {
@@ -158,6 +171,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
+    
 }
 
 .box-item,
@@ -207,6 +221,7 @@ html {
     font-weight: bold; /* Make text bold */
     background: linear-gradient(90deg, red,blue,rgb(18, 145, 223));
     -webkit-background-clip: text; /* Clips background to text */
-    -webkit-text-fill-color: transparent; /* Makes the text transparent to show the background */
+    -webkit-text-fill-color: transparent;
+    /* Makes the text transparent to show the background */
     
 }
