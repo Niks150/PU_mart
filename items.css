@@ -9,10 +9,17 @@ body, html {
 
 /* Navigation Bar Container */
 .nav_container {
-    background-color: white; /* Set navbar background to white */
+    background-color: white;
     padding: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Blurry drop shadow */
-    border-bottom: none; /* Remove border if previously added */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-image: url("/assests/parul-university-vadodara-226054.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 /* Navigation Bar */
