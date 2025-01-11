@@ -34,7 +34,7 @@
         <div id="lost-form-container">
             <h2>Lost Item</h2>
             <form id="lost-item-form">
-                <label for="lost-item-name">Item Name:</label>
+                <label for="lost-item-name">Item Name:<sup class="star">*</sup></label>
                 <input type="text" id="lost-item-name" name="item-name" required>
 
                 <label for="lost-category">Select Category:</label>
@@ -50,7 +50,7 @@
                 <label for="lost-description">Description:</label>
                 <textarea id="lost-description" name="description" rows="4" required></textarea>
 
-                <label for="lost-location">Last Seen Location:</label>
+                <label for="lost-location">Last Seen Location:<sup class="star">*</sup></label>
                 <input type="text" id="lost-location" name="location" required>
 
                 <label for="lost-image">Upload Image:</label>
@@ -65,7 +65,7 @@
         <div id="found-form-container" style="display: none;">
             <h2>Found Item</h2>
             <form id="found-item-form">
-                <label for="found-item-name">Item Name:</label>
+                <label for="found-item-name">Item Name:<sup class="star">*</sup></label>
                 <input type="text" id="found-item-name" name="item-name" required>
 
                 <label for="found-category">Select Category:</label>
@@ -78,17 +78,17 @@
                     <option value="others">Others</option>
                 </select>
 
-                <label for="found-description">Description:</label>
+                <label for="found-description">Description:<sup class="star">*</sup></label>
                 <textarea id="found-description" name="description" rows="4" required></textarea>
 
-                <label for="found-location">Found Location:</label>
+                <label for="found-location">Found Location:<sup class="star">*</sup></label>
                 <input type="text" id="found-location" name="location" required>
 
-                <h2 id="calander" >Select a Date</h2>
+                <h2 id="calander" >Select a Date:<sup class="star">*</sup></h2>
                 <br>
                 <input type="text" class="calendar-input" id="calendar">
 
-                <label for="found-image">Upload Image:</label>
+                <label for="found-image">Upload Image:<sup class="star">*</sup></label>
                 <input type="file" id="found-image" name="image" accept="image/*">
 
                 <button type="submit">Submit</button>
@@ -96,11 +96,9 @@
         </div>
     </div>
 
-    <script src="lost.js"></script>
     
-    <script>
-       
-    </script>
+    
 </body>
+<script src="lost.js"></script>
 
 </html>

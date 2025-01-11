@@ -72,49 +72,34 @@
         <a href="#" class="box"><img src="https://picsum.photos/200?random=35" alt="Image 35"></a>
 
 
-        <div id="overlay">
+        <!-- Overlay for displaying detailed information -->
+        <div id="overlay" style="display: none;">
             <div id="small-box">
                 <button id="close-btn">❌</button>
-                <img src="" alt="Selected Item">
-                 <div class="section">
+                <img id="overlay-image" src="" alt="Selected Item">
+                <div class="section">
                     <strong>Item Name</strong>
-                    <p>apple airpods</p>
+                    <p id="item-name">apple airpods</p>
                 </div>
                 <div class="section">
-                    <strong>Last seen Location</strong>
-                    <p>Founded at kathi junction</p>
+                    <strong>Last Seen Location</strong>
+                    <p id="item-location">Founded at Kathi Junction</p>
                 </div>
                 <div class="section">
                     <strong>Description:</strong>
-                    <p>White colour Airpods</p>
+                    <p id="item-description">White color Airpods</p>
                 </div>
-               
+                <div class="section">
+                    <strong>Date (in DD/MM/YYYY):</strong>
+                    <p id="item-date">12/12/2024</p>
+                </div>
             </div>
         </div>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const overlay = document.getElementById("overlay");
-                const smallBox = document.getElementById("small-box");
-                const closeBtn = document.getElementById("close-btn");
-    
-                // Add click event to each image in the box
-                document.querySelectorAll(".box img").forEach((img) => {
-                    img.addEventListener("click", () => {
-                        const smallBoxImage = smallBox.querySelector("img");
-                        smallBoxImage.src = img.src; // Set the clicked image
-                        overlay.style.display = "flex"; // Show the overlay
-                    });
-                });
-    
-                // Add click event to close button
-                closeBtn.addEventListener("click", () => {
-                    overlay.style.display = "none"; // Hide the overlay
-                });
-            });
-        </script>
-        <!-- Footer -->
-        
     </div>
+
+    <!-- Footer -->
+    <!-- Add footer content if necessary -->
+
+    <script src="items.js"></script>
 </body>
 </html>

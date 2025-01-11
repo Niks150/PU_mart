@@ -222,3 +222,7 @@ form button:hover {
     line-height: 14px;
     margin-top: -4px;
 }
+.star{
+    color: red;
+    font-size: 15px;
+}

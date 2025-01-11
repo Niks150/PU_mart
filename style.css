@@ -288,8 +288,10 @@ html {
     font-size: 25px; /* Adjust font size as needed */
     font-weight: bold; /* Make text bold */
     background: linear-gradient(90deg, red,blue,rgb(18, 145, 223));
-    -webkit-background-clip: text; /* Clips background to text */
+    -webkit-background-clip: text;
+    background-clip:calc(); /* Clips background to text */
     -webkit-text-fill-color: transparent;
     /* Makes the text transparent to show the background */
     
+}
 }

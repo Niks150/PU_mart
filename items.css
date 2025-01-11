@@ -128,15 +128,15 @@ body, html {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: none; /* Hidden by default */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Above all other elements */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it appears above other elements */
 }
 
-/* Small Box Display */
+/* Small Box for Content */
 #small-box {
-    background-color:#FFFDF2; /* Translucent background */
+    background-color: #FFFDF2;
     width: 400px;
     height: 600px;
     border-radius: 10px;
@@ -145,9 +145,10 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+    gap: 14px;
+    animation: fadeIn 0.3s ease-in-out;
 }
+
 
 /* Small Box Image */
 #small-box img {
@@ -157,6 +158,7 @@ body, html {
     border-radius: 10px;
     margin: 0 auto;
     display: block;
+    margin-top: -33px;
 }
 
 /* Small Box Sections */
@@ -203,6 +205,7 @@ body, html {
 }
 
 /* Fade-in Animation */
+/* Fade-in Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -211,5 +214,23 @@ body, html {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+
+    #small-box {
+        width: 90%;
+        height: auto;
     }
 }
