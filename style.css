@@ -14,15 +14,7 @@ html {
 
 
 /* Main Container */
-.boxes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    opacity: 1;
-    
-}
+
 
 /* Navigation Bar */
 .nav_container {
@@ -65,7 +57,7 @@ html {
 }
 
 .nav_bar a:hover {
-    background-color: #75bdec;
+    background-color: #39a3f4;
     color: black;
     border-radius: 5px;
 }
