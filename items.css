@@ -5,6 +5,7 @@ body, html {
     font-family: 'Roboto', sans-serif; /* Use Roboto font */
     box-sizing: border-box;
     background-color: #FFFDF2;
+    height: 100vh;
 }
 
 /* Navigation Bar Container */
@@ -85,6 +86,7 @@ body, html {
     justify-content: space-evenly;
     padding: 20px;
     max-height: 100vh;
+    margin-top: 85PX;
 }
 
 /* Boxes Styling */
