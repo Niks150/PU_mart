@@ -17,7 +17,7 @@ body, html {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-image: url("/assests/parul-university-vadodara-226054.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -117,14 +117,14 @@ body, html {
 
 /* Active Effect on Box */
 .box:active {
-    background-color: red;
+    background-color: rgb(237, 181, 181);
 }
 
 /* Overlay for the Small Box */
 #overlay {
     position: fixed;
     top: 0;
-    left: 0;
+   
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
