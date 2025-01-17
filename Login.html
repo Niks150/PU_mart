@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
+    <div class="nav_container">
+        <div class="nav_container">
+            <div class="nav_bar">
+                <img src="/assests/logo.png" alt="Parul University Logo" class="nav_logo">
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+                <a href="items.html"><i class="fa fa-list"></i> Founded Items</a>
+                <a href="lost.html"><i class="fa fa-search"></i> Lost </a>
+                <a href="#"><i class="fa fa-map-marker"></i> Buy & Sell</a>
+                <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+                <a href="login.html" alt="_main"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <!-- Image Section -->
         <div class="image-container">
             <img class="image_login" src="/assests/4860253.jpg" alt="Login Illustration">
         </div>
-        
+
         <!-- Login Form Section -->
         <div id="form-container">
             <!-- Login Form -->
@@ -28,9 +43,9 @@
                 <label for="password">Password</label>
                 <input type="password" placeholder="Password" id="password">
 
-                <button >Log In</button>
+                <button>Log In</button>
                 <p>
-                    Don't have an account? 
+                    Don't have an account?
                     <span class="toggle-form" onclick="toggleForm()" style="cursor: pointer;">Register</span>
                 </p>
                 <div class="social">
@@ -53,7 +68,7 @@
 
                 <button style="cursor: pointer;">Register</button>
                 <p>
-                    Already have an account? 
+                    Already have an account?
                     <span class="toggle-form" onclick="toggleForm()">Login</span>
                 </p>
             </form>
@@ -76,4 +91,5 @@
         }
     </script>
 </body>
+
 </html>
