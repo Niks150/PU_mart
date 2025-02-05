@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy & Sell Page</title>
+  <link rel="stylesheet" href="buy_sell.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="nav_container">
+    <div class="nav_bar">
+        <img src="/assests/logo.png" alt="Parul University Logo" class="nav_logo">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="items.html"><i class="fa fa-list"></i> Founded Items</a>
+        <a href="lost.html"><i class="fa fa-search"></i> Lost </a>
+        <a href="buy_sell.html"><i class="fa fa-map-marker"></i> Buy & Sell</a>
+        <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+        <a href="login.html" alt="_main"><i class="fa-solid fa-right-to-bracket"></i>  Login</a>
+    </div>
+  </div>
+
+  <div class="scrollable-container">
+    <script>
+      for (let i = 1; i <= 20; i++) {
+        document.write(`
+          <div class="box" onclick="showOverlay('Product ${i}', 'This is product ${i}', '12/12/2024', '₹${(Math.floor(Math.random() * 50000) + 1000).toLocaleString('en-IN')}')">
+            <img src="https://picsum.photos/220?random=${i}" alt="Product Image">
+            <div class="details">
+              
+              <div class="price">₹${(Math.floor(Math.random() * 50000) + 1000).toLocaleString('en-IN')}</div>
+              <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+              <div class="description">Product ${i} Short Description</div>
+              <div class="location-date">
+                <span class="location">NARSINGI, HYDERABAD</span>
+                <span class="date">JAN 26</span>
+              </div>
+            </div>
+          </div>
+        `);
+      }
+    </script>
+  </div>
+
+  
+</body>
+</html>
