@@ -296,7 +296,7 @@ html {
     -webkit-background-clip: text;
     background-clip:calc(); /* Clips background to text */
     -webkit-text-fill-color: transparent;
-    /* Makes the text transparent to show the background */
+    
     
 }
 }
