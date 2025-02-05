@@ -27,4 +27,12 @@
                 openLoginModal();
             });
         });
-   
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".image");
+        
+            images.forEach(image => {
+                image.addEventListener("click", function () {
+                    window.location.href = "buy_sell.html";
+                });
+            });
+        });
