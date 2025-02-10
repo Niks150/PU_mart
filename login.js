@@ -18,3 +18,21 @@ function showOtpForm() {
 function showRegisterForm() {
     toggleForm('register-form');
 }
+function toggleCheckbox(element) {
+    element.classList.toggle('active');
+}
+function toggleCheckbox(label) {
+    let checkbox = label.querySelector("input");
+    checkbox.checked = !checkbox.checked; // Toggle checkbox state
+    label.classList.toggle("active", checkbox.checked); // Add active class if checked
+}
+function toggleCheckbox(label) {
+    let checkbox = label.querySelector("input");
+    checkbox.checked = !checkbox.checked; // Toggle checkbox state
+    label.classList.toggle("active", checkbox.checked); // Add active class if checked
+}
+
+function redirectToProfile(event) {
+    event.preventDefault(); // Prevent form submission
+    window.location.href = "profile.html"; // Redirect to profile page
+}
