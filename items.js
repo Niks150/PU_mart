@@ -26,7 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.querySelectorAll(".box").forEach((box) => {
     box.addEventListener("click", function () {
         const overlay = this.querySelector("#overlay");
+<<<<<<< HEAD
         overlay.style.display = "flex";
+=======
+        overlay.style.display = "block";
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
     });
 });
 
@@ -73,7 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             // Show the overlay
+<<<<<<< HEAD
             overlay.style.display = "flex";
+=======
+            overlay.style.display = "block";
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 
             // Close button functionality
             document.getElementById("close-btn").addEventListener("click", function () {

@@ -1,10 +1,17 @@
 /* General Reset */
+<<<<<<< HEAD
 body,
 html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     /* Use Roboto font */
+=======
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
     box-sizing: border-box;
     background-color: #FFFDF2;
     height: 100vh;
@@ -19,15 +26,23 @@ html {
     top: 0;
     width: 100%;
     z-index: 1000;
+<<<<<<< HEAD
 
     background-repeat: no-repeat;
     background-size: cover;
 
+=======
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Navigation Bar */
 .nav_bar {
     display: flex;
+<<<<<<< HEAD
     justify-content: space-evenly;
     /* Evenly space all elements */
     align-items: center;
@@ -35,11 +50,18 @@ html {
     /* Slightly increased height */
     padding: 0 15px;
     /* Adjust padding for the navbar */
+=======
+    justify-content: space-evenly; /* Evenly space all elements */
+    align-items: center;
+    height: 80px; /* Slightly increased height */
+    padding: 0 15px; /* Adjust padding for the navbar */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Navigation Links */
 .nav_bar a {
     text-decoration: none;
+<<<<<<< HEAD
     color: black;
     /* Set default font color to black */
     font-size: 18px;
@@ -52,37 +74,68 @@ html {
     align-items: center;
     gap: 8px;
     /* Space between the icon and text */
+=======
+    color: black; /* Set default font color to black */
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+    padding: 12px 18px; /* Increased padding for better clickability */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between the icon and text */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Icon Styling */
 .nav_bar a i {
+<<<<<<< HEAD
     color: black;
     /* Default icon color */
     transition: color 0.3s ease;
     /* Smooth color transition */
+=======
+    color: black; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth color transition */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Hover Effect */
 .nav_bar a:hover {
+<<<<<<< HEAD
     background-color: #f5f5f5;
     /* Light black background on hover */
     color: black;
     /* Font color stays black */
     border-radius: 5px;
     /* Rounded corners for the hover effect */
+=======
+    background-color: #f5f5f5; /* Light black background on hover */
+    color: black; /* Font color stays black */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Hover Effect for Icons */
 .nav_bar a:hover i {
+<<<<<<< HEAD
     color: black;
     /* Icon color stays black */
+=======
+    color: black; /* Icon color stays black */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Active Effect */
 .nav_bar a:active {
+<<<<<<< HEAD
     background-color: #333;
     color: white;
     border-radius: 5px;
+=======
+    background-color: #333; 
+    color: white; 
+    border-radius: 5px; 
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Logo Styling */
@@ -127,8 +180,12 @@ html {
 
 /* Hover Effect on Box */
 .box:hover {
+<<<<<<< HEAD
     transform: scale(1.1);
     /* Slightly increase size on hover */
+=======
+    transform: scale(1.1); /* Slightly increase size on hover */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Active Effect on Box */
@@ -140,6 +197,7 @@ html {
 #overlay {
     position: fixed;
     top: 0;
+<<<<<<< HEAD
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -153,6 +211,16 @@ html {
     /* Center vertically */
     z-index: 1000;
     /* Ensure it appears above other elements */
+=======
+   
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it appears above other elements */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }
 
 /* Small Box for Content */
@@ -184,12 +252,19 @@ html {
 
 /* Small Box Sections */
 #small-box .section {
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
     /* Use Roboto font */
     font-size: 16px;
     color: #333;
     text-align: left;
     /* Align text to the left */
+=======
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-size: 16px;
+    color: #333;
+    text-align: left; /* Align text to the left */
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -234,7 +309,10 @@ html {
         opacity: 0;
         transform: scale(0.9);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
     to {
         opacity: 1;
         transform: scale(1);
@@ -258,6 +336,7 @@ html {
         height: auto;
     }
 }
+<<<<<<< HEAD
 
 .dropdown {
     position: relative;
@@ -299,3 +378,5 @@ html {
 .dropdown-menu a:hover {
     background: #ddd;
 }
+=======
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f

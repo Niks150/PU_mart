@@ -35,4 +35,8 @@ function toggleCheckbox(label) {
 function redirectToProfile(event) {
     event.preventDefault(); // Prevent form submission
     window.location.href = "profile.html"; // Redirect to profile page
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f

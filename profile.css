@@ -250,6 +250,7 @@ html {
         flex-direction: column;
         height: auto;
     }
+<<<<<<< HEAD
 }
 .dropdown {
     position: relative;
@@ -289,4 +290,6 @@ html {
 
 .dropdown-menu a:hover {
     background: #ddd;
+=======
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
 }

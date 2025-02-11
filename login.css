@@ -305,7 +305,16 @@ form button:hover {
 .checkbox-btn input {
     display: none;
 }
+<<<<<<< HEAD
 .checkbox-btn::after{
     background-color: blue;
 }
 
+=======
+
+.checkbox-btn:active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f

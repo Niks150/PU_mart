@@ -226,6 +226,7 @@ form button:hover {
     color: red;
     font-size: 15px;
 }
+<<<<<<< HEAD
 .dropdown {
     position: relative;
 }
@@ -266,3 +267,5 @@ form button:hover {
     background: #ddd;
 }
 
+=======
+>>>>>>> 1ca45d921752b3f5ee3946f22f180c2f9bb6a52f
